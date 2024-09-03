@@ -12,9 +12,9 @@ import profile from "../../public/goku-profile.jpg";
 
 function Navbar() {
     return (
-        <div className="flex justify-between px-6 py-2">
-            <div className="flex items-center space-x-4">
-                <AiOutlineMenu className="text-xl cursor-pointer" />
+        <div className="flex justify-between px-6 py-2 fixed top-0 w-[100%] bg-white h-14">
+            <div className="flex items-center space-x-4 ">
+                <AiOutlineMenu size={"38px"} className="cursor-pointer p-2 rounded-full hover:bg-gray-200 duration-200" />
                 <img src={logo} alt="" className="w-28 cursor-pointer" />
             </div>
             <div className="flex w-[35%]">
@@ -29,14 +29,14 @@ function Navbar() {
                     <CiSearch size={"24px"} />
                 </button>
                 <IoMdMic
-                    size={"42px"}
-                    className="ml-3 p-2 rounded-full border cursor-pointer hover:bg-gray-200 duration-200"
+                    size={"45px"}
+                    className="ml-3 px-2 rounded-full border cursor-pointer hover:bg-gray-200 duration-200"
                 />
             </div>
             <div className="flex items-center space-x-4">
-                <RiVideoAddLine className="text-2xl" />
-                <BsBell className="text-2xl" />
-                <Avatar src={profile}  size="32" round={true} />
+                <RiVideoAddLine className="text-2xl cursor-pointer" />
+                <BsBell className="text-2xl cursor-pointer" />
+                <Avatar src={profile}  size="32" round={true} className="cursor-pointer"/>
             </div>
         </div>
     );
