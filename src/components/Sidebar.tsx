@@ -267,7 +267,7 @@ function Sidebar() {
 function displaySidebarItems(sidebarItems: sidebarItemsTypes) {
     return sidebarItems.map((item) => {
         return (
-            <div className="flex items-center cursor-pointer space-x-6 hover:bg-gray-100 duration-200 rounded-md p-2">
+            <div key={item.id} className="flex items-center cursor-pointer space-x-6 hover:bg-gray-100 duration-200 rounded-md p-2">
                 <div className="text-2xl">
                     {item.icon}
                 </div>
