@@ -24,11 +24,11 @@ export default function AuthProvider({ children }: any) {
 
     const fetchAllData = (query: any) => {
         setLoading(false)
-        // fetchData(`search/?q=${query}`)
-        //     .then(({contents}) => {
-        //         setData(contents)
-        //         setLoading(true)
-        //     })
+        fetchData(`search/?q=${query}`)
+            .then(({contents}) => {
+                setData(contents)
+                setLoading(true)
+            })
     }
 
     return (

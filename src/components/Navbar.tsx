@@ -28,10 +28,13 @@ function Navbar() {
                 <button className="px-4 py-2 rounded-r-full bg-gray-100">
                     <CiSearch size={"24px"} />
                 </button>
-                <IoMdMic
-                    size={"45px"}
-                    className="ml-3 px-2 rounded-full border cursor-pointer hover:bg-gray-200 duration-200"
-                />
+                <button>
+                    <IoMdMic
+                        size={"40px"}
+                        className="ml-3 px-2 rounded-full border cursor-pointer hover:bg-gray-200 duration-200"
+                    />
+                </button>
+                
             </div>
             <div className="flex items-center space-x-4">
                 <RiVideoAddLine className="text-2xl cursor-pointer" />

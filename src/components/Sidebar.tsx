@@ -206,7 +206,7 @@ function Sidebar() {
 
 
     return (
-        <div className="px-6 w-[18%] mt-14 h-[calc(100vh-4rem)] overflow-y-scroll overflow-x-hidden scrollbar-thin">
+        <div className="px-6 w-[20%] h-[calc(100vh-4rem)] overflow-y-scroll overflow-x-hidden scrollbar-thin">
             <div className="items-center">
                 {
                     displaySidebarItems(sidebarItems1)
