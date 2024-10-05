@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
 import Time from './Time'
 import { BsFillCheckCircleFill } from "react-icons/bs";
@@ -32,7 +32,7 @@ function Video({ video }: VideoProps) {
                                 {video?.author?.title}
                                 {
                                     video?.author?.badges[0]?.type === "VERIFIED_CHANNEL"
-                                    && <BsFillCheckCircleFill className='text-gray-600 ml-1 text-[12px]'/>
+                                    && <BsFillCheckCircleFill className='text-gray-600 ml-1 text-[12px]' />
                                 }
                             </span>
                             <div className='flex items-center text-gray-500 text-[12px]'>

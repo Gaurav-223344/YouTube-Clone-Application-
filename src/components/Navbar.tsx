@@ -1,4 +1,4 @@
-import React from "react";
+;
 import Avatar from "react-avatar";
 
 import { AiOutlineMenu } from "react-icons/ai";
@@ -9,13 +9,14 @@ import { BsBell } from "react-icons/bs";
 
 import logo from "../../public/logo.png";
 import profile from "../../public/goku-profile.jpg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
         <div className="flex justify-between px-6 py-2 fixed top-0 w-[100%] bg-white h-14">
             <div className="flex items-center space-x-4 ">
                 <AiOutlineMenu size={"38px"} className="cursor-pointer p-2 rounded-full hover:bg-gray-200 duration-200" />
-                <img src={logo} alt="" className="w-28 cursor-pointer" />
+                <Link to={`/`}> <img src={logo} alt="" className="w-28 cursor-pointer" /></Link>
             </div>
             <div className="flex w-[35%]">
                 <div className="w-[100%] border px-4 py-2 rounded-l-full">

@@ -1,5 +1,5 @@
 import moment from 'moment'
-import React from 'react'
+
 
 type TimeProps = {
     time: number

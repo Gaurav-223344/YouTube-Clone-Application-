@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // to globally state management
 
 import { createContext, useContext, useEffect, useState } from "react";
